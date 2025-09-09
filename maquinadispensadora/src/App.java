@@ -2,6 +2,7 @@ import javax.swing.JOptionPane;
 
 public class App {
     public static void main(String[] args) {
+         JOptionPane.showMessageDialog(null,"\n-----------------------------------------\n Bievenido a el sistema ATM \n-----------------------------------------");
 
         
         String input = JOptionPane.showInputDialog("ingrese la cantidad que sera dispensada");
@@ -13,6 +14,7 @@ public class App {
             return;
         }
      
+        JOptionPane.showMessageDialog(null, "    procesando...    ");
 
         Manejador v100 = new V100k();
         Manejador v50 = new V50k();
@@ -27,6 +29,7 @@ public class App {
 
         v100.procesar(cantidad);
 
+        JOptionPane.showMessageDialog(null, "    Gracias por preferirnos      ");
          
     }
     
